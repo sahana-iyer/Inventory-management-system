@@ -113,6 +113,28 @@ User Authentication: Add user authentication and access control for secure data 
 
 ![WhatsApp Image 2024-11-05 at 21 52 36_cd7c8255](https://github.com/user-attachments/assets/80077e66-05bf-48e8-aea3-3fa3e35d22b6)
 
+## Conclusion
+
+Conclusion
+The Somaiya Inventory Management System is a Java-based application designed to streamline inventory management tasks for small to medium-sized businesses. This system provides a user-friendly interface with a dark theme for improved usability and accessibility.
+
+## Key Features:
+Product Management: Users can easily add, update, and delete products in the inventory.
+
+Supplier Management: Manage suppliers to ensure a seamless supply chain.
+
+Pending Orders: A dedicated section for managing and tracking pending orders to enhance order fulfillment.
+
+Search Functionality: Quickly find products by their ID, improving operational efficiency.
+
+Database Integration: The application connects to a MySQL database for persistent data storage, ensuring data integrity and accessibility.
+
+## Technologies Used:
+Java: The primary programming language for the application.
+
+Swing: For creating the graphical user interface.
+
+MySQL: For database management and data storage.
 
 
 

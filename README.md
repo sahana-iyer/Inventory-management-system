@@ -25,67 +25,14 @@ MySQL: Relational database used to store and manage data for products, orders, a
 Prerequisites
 Java Development Kit (JDK): Ensure you have JDK 8 or later installed.
 
-MySQL: Install MySQL and set up a database.
+MySQL: Install MySQL and set up a database a.long with connector
 
-Database Setup
-Create a new database in MySQL (e.g., inventory_db).
-
-### Run the following SQL commands to create the necessary tables:
-
-sql
-Copy code
-CREATE DATABASE inventory_db;
-
-USE inventory_db;
-
-CREATE TABLE products (
-    product_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    price_per_item DECIMAL(10, 2) NOT NULL,
-    quantity INT NOT NULL,
-    total_price DECIMAL(10, 2) AS (price_per_item * quantity) STORED
-);
-
-CREATE TABLE pending_orders (
-    order_id INT AUTO_INCREMENT PRIMARY KEY,
-    product_id INT NOT NULL,
-    customer_name VARCHAR(255) NOT NULL,
-    quantity INT NOT NULL,
-    order_date DATE,
-    status VARCHAR(50),
-    FOREIGN KEY (product_id) REFERENCES products(product_id)
-);
-
-CREATE TABLE suppliers (
-    supplier_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    contact_info VARCHAR(255),
-    products_supplied VARCHAR(255)
-);
-
-## Application Configuration
-Clone the repository to your local machine.
-
-bash
-Copy code
-cd inventory-management-system
-Update database credentials in the Java code (PendingOrdersPanel.java or other relevant files):
-
-java
-Copy code
-private static final String DB_URL = "jdbc:mysql://localhost:3306/inventory_db";
-
-private static final String DB_USER = "your-username"; // Change to your MySQL username
-
-private static final String DB_PASSWORD = "your-password"; // Change to your MySQL password
-
-Compile and run the application:
-
-bash
-Copy code
-javac PendingOrdersPanel.java
-java PendingOrdersPanel
-
+1. Download the zip folder
+2. open command prompt and navigate to the directory the Inventory management system main folder
+3. give the following prompt- java -cp "MyProject.jar;lib/mysql-connector-j-9.0.0.jar" InventoryManagementSystem
+4. enter the username- 'admin@union.com'
+5. enter the password- 'password123'
+   
 ## Usage
 Launch the Application: Start the Inventory Management System by running the main class.
 
@@ -94,6 +41,8 @@ Manage Products: Use the product management section to add, update, or delete pr
 Handle Orders: Navigate to the pending orders panel to add new customer orders, update existing ones, or delete completed orders.
 
 Manage Suppliers: Add and update supplier information to keep track of your supply chain.
+
+View the upcoming deliveries
 
 ## Future Enhancements
 Reports Generation: Add functionality to generate sales and inventory reports.
@@ -105,13 +54,13 @@ Export Data: Provide options to export data in CSV or Excel formats for record-k
 User Authentication: Add user authentication and access control for secure data management.
 
 ## Screenshots
-![WhatsApp Image 2024-11-05 at 21 49 53_4a348d5f](https://github.com/user-attachments/assets/8b307e2c-d5d7-4fee-b845-e72c6d237a61)
+![image](https://github.com/user-attachments/assets/57add50a-b772-4b83-b679-afc3bb00c804)
 
-![WhatsApp Image 2024-11-05 at 21 50 19_ab51db9b](https://github.com/user-attachments/assets/2b211cce-e755-4d4d-88e8-0eef20799817)
+![image](https://github.com/user-attachments/assets/0d337db7-7946-41d9-86ee-749fc786eb3b)
 
-![WhatsApp Image 2024-11-05 at 21 50 41_bed5472d](https://github.com/user-attachments/assets/ef6052c8-4c31-4650-ab51-1a26efcd0548)
+![image](https://github.com/user-attachments/assets/61121b9d-2adb-4f41-85d9-77da4797625d)
 
-![WhatsApp Image 2024-11-05 at 21 52 36_cd7c8255](https://github.com/user-attachments/assets/80077e66-05bf-48e8-aea3-3fa3e35d22b6)
+
 
 ## Conclusion
 
@@ -135,6 +84,10 @@ Java: The primary programming language for the application.
 Swing: For creating the graphical user interface.
 
 MySQL: For database management and data storage.
+
+## Contributors:
+Sahana Iyer-
+Vraj Patel- https://github.com/vraj2711
 
 
 

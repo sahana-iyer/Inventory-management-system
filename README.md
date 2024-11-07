@@ -63,10 +63,6 @@ User Authentication: Add user authentication and access control for secure data 
 
 
 
-## Conclusion
-
-Conclusion
-The Somaiya Inventory Management System is a Java-based application designed to streamline inventory management tasks for small to medium-sized businesses. This system provides a user-friendly interface with a dark theme for improved usability and accessibility.
 
 ## Key Features:
 Product Management: Users can easily add, update, and delete products in the inventory.
@@ -85,6 +81,11 @@ Java: The primary programming language for the application.
 Swing: For creating the graphical user interface.
 
 MySQL: For database management and data storage.
+
+## Conclusion
+
+Conclusion
+The Somaiya Inventory Management System is a Java-based application designed to streamline inventory management tasks for small to medium-sized businesses. This system provides a user-friendly interface with a dark theme for improved usability and accessibility.
 
 ## Contributors:
 Sahana Iyer-

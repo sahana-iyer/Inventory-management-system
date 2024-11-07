@@ -30,8 +30,9 @@ MySQL: Install MySQL and set up a database a.long with connector
 1. Download the zip folder
 2. open command prompt and navigate to the directory the Inventory management system main folder
 3. give the following prompt- java -cp "MyProject.jar;lib/mysql-connector-j-9.0.0.jar" InventoryManagementSystem
-4. enter the username- 'admin@union.com'
-5. enter the password- 'password123'
+4. REMINDER- update your mySQL password before running the program
+5. enter the username- 'admin@union.com'
+6. enter the password- 'password123'
    
 ## Usage
 Launch the Application: Start the Inventory Management System by running the main class.

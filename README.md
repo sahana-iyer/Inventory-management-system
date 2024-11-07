@@ -88,7 +88,7 @@ Conclusion
 The Somaiya Inventory Management System is a Java-based application designed to streamline inventory management tasks for small to medium-sized businesses. This system provides a user-friendly interface with a dark theme for improved usability and accessibility.
 
 ## Contributors:
-Sahana Iyer-
+Sahana Iyer- https://github.com/sahana-iyer
 
 
 Vraj Patel- https://github.com/vraj2711
